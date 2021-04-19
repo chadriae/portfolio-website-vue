@@ -3,7 +3,7 @@
         <header class="font-bold text-left text-2xl mb-2">Projects</header>
         <div class="flex md:grid grid-cols-2 gap-6">
             <div class="p-2 leading-loose relative shadow">
-                <a class="" href="https://github.com/chadriae/king-size"><img @mouseover="hover = true" @mouseleave="hover = false" :src="chained"></a>
+                <a class="" href="https://github.com/chadriae/king-size"><img class="h-80" @mouseover="hover = true" @mouseleave="hover = false" :src="chained"></a>
                 <header class="uppercase font-semibold">Chained</header>
                 <p class="text-gray-700 h-32">A website made for people who want to look for a local bicycle repairer. Repairers also get to make an account and share their specialties and locality.</p>
                 <div class="absolute bottom-2 inset-x-4 flex flex-row-reverse gap-2">
