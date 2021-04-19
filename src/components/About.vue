@@ -5,7 +5,7 @@
             <div class="mb-12 mr-4">
                 <header class="font-bold text-left text-2xl mb-2">About me</header>
                 <p class="text-left text-gray-700 leading-relaxed p-2">
-                    My name is Christophe Adriaensens. I started coding not so long ago. Now I'm a full stack developer with strong interest in everything web dev. Coffee, music and 26-inch bike enthousiast. Happy young dad of an energetic 5-year old girl.
+                    My name is Christophe Adriaensens. I started coding not so long ago. Now I'm a junior full stack developer with strong interest in everything web dev. Coffee, music and 26-inch bike enthousiast. Happy young dad of an energetic 5-year old girl.
                 </p>
             </div>
             
@@ -36,7 +36,7 @@ export default {
   data () {
       return {
           recentImage: require("../assets/christopheNew.jpeg"),
-          oldImage: require("../assets/christopheOld.jpeg"),
+          oldImage: require("../assets/christopheJane.jpeg"),
           hover: false
       }
   },
