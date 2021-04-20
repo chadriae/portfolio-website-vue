@@ -1,10 +1,10 @@
 <template>
     <div class="mt-12 text-left">
         <header class="font-bold text-left text-2xl mb-2">Projects</header>
-        <div class="flex md:grid grid-cols-2 gap-6">
-            <div class="p-4 leading-loose relative rounded-lg shadow">
-                <a href="https://github.com/chadriae/king-size"><img class="h-80" @mouseover="chainedHover = true" @mouseleave="chainedHover = false" :src="chained"></a>
-                <header class="uppercase font-semibold"><a href="https://github.com/chadriae/king-size">Chained</a></header>
+        <div class="md:grid grid-cols-2 gap-6">
+            <div class=" p-4 leading-loose relative rounded-lg shadow w-auto">
+                <a class="flex justify-center" href="https://github.com/chadriae/king-size"><img class="h-80" @mouseover="chainedHover = true" @mouseleave="chainedHover = false" :src="chained"></a>
+                <header class=" uppercase font-semibold"><a href="https://github.com/chadriae/king-size">Chained</a></header>
                 <p class="text-gray-700 h-32">A website made for people who want to look for a local bicycle repairer. Repairers also get to make an account and share their specialties and locality.</p>
                 <div class="absolute bottom-2 inset-x-4 flex flex-row-reverse gap-2">
                     <a href="https://tailwindcss.com/"><img class="h-6 backdrop-filter grayscale" src="../assets/tailwind.png"></a>
@@ -13,7 +13,7 @@
                 </div>
              </div>
             <div class="p-4 leading-loose relative rounded-lg shadow">
-                <a href="https://github.com/chadriae/php-mvc-Ismi"><img class="h-80" @mouseover="beconnectHover = true" @mouseleave="beconnectHover = false" :src="beconnect"></a>
+                <a class="flex justify-center" href="https://github.com/chadriae/php-mvc-Ismi"><img class="h-80" @mouseover="beconnectHover = true" @mouseleave="beconnectHover = false" :src="beconnect"></a>
                 <header class="uppercase font-semibold"><a href="https://github.com/chadriae/php-mvc-Ismi">BeConnect</a></header>
                 <p class="text-gray-700 h-32">A place where BeCode-alumni could meet, register, update their profiles and talk about their experiences.</p>
                 <div class="absolute bottom-2 inset-x-4 flex flex-row-reverse gap-2">
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="p-4 leading-loose relative rounded-lg shadow">
-                <a href="https://github.com/chadriae/intro-react"><img class="h-80" @mouseover="todoHover = true" @mouseleave="todoHover = false" :src="todo"></a>
+                <a class="flex justify-center" href="https://github.com/chadriae/intro-react"><img class="h-80" @mouseover="todoHover = true" @mouseleave="todoHover = false" :src="todo"></a>
                 <header class="uppercase font-semibold"><a href="https://github.com/chadriae/intro-react">ToDo</a></header>
                 <p class="text-gray-700 h-32">Simple and fun todo-app made with React. Added time, date and inspirational quotes.</p>
                 <div class="absolute bottom-2 inset-x-4 flex flex-row-reverse gap-2">

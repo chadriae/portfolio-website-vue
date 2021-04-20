@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-24 grid grid-cols-2 justify-items-stretch">
+    <div class="mt-24 sm:grid grid-cols-2 justify-items-stretch">
         <div class="text-container">
             <div class="mb-12 mr-4">
                 <header class="font-bold text-left text-2xl mb-2">About me</header>
