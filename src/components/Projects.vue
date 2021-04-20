@@ -50,21 +50,21 @@ export default {
       }
   },
   computed: {
-    chained: function () {
+    chained() {
         if (this.chainedHover) {
             return this.chainedGif;
         } else {
             return this.chainedStatic;
         }
     },
-    beconnect: function () {
+    beconnect () {
         if (this.beconnectHover) {
             return this.beconnectGif;
         } else {
             return this.beconnectStatic;
         }
     },
-    todo: function () {
+    todo () {
         if (this.todoHover) {
             return this.todoGif;
         } else {
