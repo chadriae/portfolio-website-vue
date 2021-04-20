@@ -20,13 +20,13 @@
             </ul>
 
             <div class="mt-4 p-2 flex gap-4">
-                <a class="social-media" href="https://github.com/chadriae"><img src="../assets/github.png" class="h-12 social-media"></a>
+                <a href="https://github.com/chadriae"><img src="../assets/github.png" class="h-12 social-media"></a>
                 <a href="https://www.linkedin.com/in/christophe-adriaensens/"><img src="../assets/linkedin.png" class="h-12 social-media"></a>
                 <a href="https://twitter.com/chadriae"><img src="../assets/twitter.png" class="h-12 social-media"></a>
             </div>
         </div>
-        <div class="p-4">
-            <img class="h-96" @mouseover="hover = true" @mouseleave="hover = false" :src="image">
+        <div class="pic-container h-96 w-72 m-2">
+            <img class="pic h-96 w-auto" @mouseover="hover = true" @mouseleave="hover = false" :src="image">
         </div>
     </div>
 </template>
@@ -55,5 +55,57 @@ export default {
 <style scoped>
     .social-media:hover {
         opacity: 0.5;
+    }
+
+    /* Hover effect picture */
+    .pic-container {
+        position: relative;
+        display: inline-block;
+        background-color: rgba(255, 0, 0, 0.701);
+    }
+
+    .pic-container:before,
+    .pic-container:after {
+        content: '';
+        display: block;
+        background-color: rgba(255, 0, 0, 0.701);
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        transition: all .15s ease;
+    }
+
+    .pic-container:before {
+        top: 0;
+        left: 0;
+        transform-origin: top left;
+        transform: rotate(-45deg) scale(0);
+    }
+
+    .pic-container:after {
+        right: 0;
+        bottom: 0;
+        transform-origin: bottom right;
+        transform: rotate(45deg) scale(0);
+    }
+
+    .pic {
+        display: block;
+        transform: translate(0, 0);
+        transition: all .15s ease;
+        position: relative;
+        z-index: 10;
+    }
+
+    .pic-container:hover .pic {
+        transform: translate(6px, -6px);
+    }
+
+    .pic-container:hover:before {
+        transform: rotate(-45deg) scale(1);
+    }
+
+    .pic-container:hover:after {
+        transform: rotate(45deg) scale(1);
     }
 </style>
