@@ -38,7 +38,7 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   width: 62rem;
   text-align: center;
-  margin: 7rem auto 7rem auto;
+  margin: 2rem auto 2rem auto;
 }
 
 @media (max-width: 400px){
