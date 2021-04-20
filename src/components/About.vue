@@ -16,6 +16,8 @@
                 <li>php</li>
                 <li>React, Vue</li>
                 <li>Laravel</li>
+                <br>
+                <span>Downlad my <span class="font-bold">cv</span> as a .pdf-file <a id="button" class="text-white py-1 px-2 rounded-lg shadow-lg font-bold" :href="pdfLink" download="cvChristopheAdriaensens">here</a></span>.
             </ul>
 
             <div class="mt-4 p-2 flex gap-4">
@@ -29,6 +31,9 @@
             <div class="justify-self-end"><img class="pic h-96 w-auto" @mouseover="hover = true" @mouseleave="hover = false" :src="image"></div>
         </div>
     </div>
+    <div class="text-left">
+           
+    </div>
 </template>
 
 <script>
@@ -37,7 +42,8 @@ export default {
       return {
           recentImage: require("../assets/christopheNew.jpeg"),
           oldImage: require("../assets/christopheJane.jpeg"),
-          hover: false
+          hover: false,
+          pdfLink: require("../assets/cv_ChristopheAdriaensens.pdf")
       }
   },
     computed: {
@@ -66,5 +72,9 @@ export default {
     .pic:hover {
         box-shadow: -5px 5px rgba(255, 0, 0, 0.625);
         transform: translate(5px,-5px);
+    }
+
+    #button {
+        background-color: #a3ddcb;
     }
 </style>
