@@ -4,6 +4,7 @@
     <About />
     <Projects />
     <!-- <Articles /> -->
+    <Contact />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Hello from './components/Hello.vue'
 import About from './components/About.vue'
 import Projects from './components/Projects.vue'
 // import Articles from './components/Articles.vue'
+import Contact from './components/Contact.vue'
 
 
 export default {
@@ -20,23 +22,29 @@ export default {
     Hello,
     About,
     Projects,
-    // Articles
+    // Articles,
+    Contact
   }
 }
 </script>
 
 <style>
+body {
+    /* background-color: rgb(255, 255, 247); */
+    /* background-color: #f9f9f1; */
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   width: 62rem;
   text-align: center;
   margin: 7rem auto 7rem auto;
 }
+
 @media (max-width: 400px){
   #app{
     width: auto;
     margin: auto;
   }
 }
-
 </style>

@@ -40,15 +40,15 @@ export default {
           hover: false
       }
   },
-  computed: {
-      image: function () {
-           if (this.hover) {
+    computed: {
+        image() {
+            if (this.hover) {
                 return this.oldImage;
             } else {
                 return this.recentImage;
             }
-      }
-  }
+        } 
+    },
 }
 </script>
 
@@ -57,55 +57,14 @@ export default {
         opacity: 0.5;
     }
 
-    /* Hover effect picture */
-    .pic-container {
-        position: relative;
-        display: inline-block;
-        background-color: rgba(255, 0, 0, 0.701);
-    }
-
-    .pic-container:before,
-    .pic-container:after {
-        content: '';
-        display: block;
-        background-color: rgba(255, 0, 0, 0.701);
-        width: 8px;
-        height: 8px;
-        position: absolute;
-        transition: all .15s ease;
-    }
-
-    .pic-container:before {
-        top: 0;
-        left: 0;
-        transform-origin: top left;
-        transform: rotate(-45deg) scale(0);
-    }
-
-    .pic-container:after {
-        right: 0;
-        bottom: 0;
-        transform-origin: bottom right;
-        transform: rotate(45deg) scale(0);
-    }
-
     .pic {
-        display: block;
-        transform: translate(0, 0);
-        transition: all .15s ease;
-        position: relative;
-        z-index: 10;
+        margin:10px;
+        box-shadow:0 0 rgba(255, 0, 0, 0.625);
+        transition:0.5s;
     }
 
-    .pic-container:hover .pic {
-        transform: translate(6px, -6px);
-    }
-
-    .pic-container:hover:before {
-        transform: rotate(-45deg) scale(1);
-    }
-
-    .pic-container:hover:after {
-        transform: rotate(45deg) scale(1);
+    .pic:hover {
+        box-shadow: -5px 5px rgba(255, 0, 0, 0.625);
+        transform: translate(5px,-5px);
     }
 </style>
