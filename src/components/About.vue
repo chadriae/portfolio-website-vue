@@ -10,12 +10,10 @@
             
             <header class="font-bold text-left text-xl mb-2">Skills</header>
             <ul class="text-left text-gray-700 leading-relaxed p-2">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>php</li>
-                <li>React, Vue</li>
-                <li>Laravel</li>
+                <li>HTML5</li>
+                <li>CSS3 - Tailwind, Bootstrap</li>
+                <li>JavaScript - Vue, React</li>
+                <li>php - Laravel</li>
                 <br>
                 <span>Downlad my <span class="font-bold">cv</span> as a .pdf-file <a id="button" class="text-white py-1 px-2 rounded-lg shadow-lg font-bold" :href="pdfLink" download="cvChristopheAdriaensens">here</a></span>.
             </ul>
