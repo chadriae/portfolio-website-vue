@@ -1,14 +1,22 @@
 <template>
-  <div class="mx-8">
-    <Hello />
-    <About />
-    <Projects />
-    <!-- <Articles /> -->
-    <Contact />
+  <div class="app" :class="(mode === 'dark') ? 'dark-bg' : ''">
+    <div class="content">
+      <div class="relative">
+        <Hello :mode="mode" />
+        <div class="absolute top-0 right-0">
+          <Switch  @toggle="toggle" />
+        </div>
+      </div>
+      <About :mode="mode" />
+      <Projects :mode="mode" />
+      <!-- <Articles /> -->
+      <Contact :mode="mode" />
+    </div>
   </div>
 </template>
 
 <script>
+import Switch from './tools/Switch'
 import Hello from './components/Hello.vue'
 import About from './components/About.vue'
 import Projects from './components/Projects.vue'
@@ -18,27 +26,55 @@ import Contact from './components/Contact.vue'
 
 export default {
   name: 'App',
+  data() {
+    return {
+      mode: 'dark'
+    }
+  },
   components: {
+    Switch,
     Hello,
     About,
     Projects,
     // Articles,
     Contact
+  },
+  methods: {
+    toggle () {
+      if (this.mode === 'dark') {
+        this.mode = 'light'
+      }
+      else {
+        this.mode = 'dark'
+      }
+    }
   }
 }
 </script>
 
 <style>
-body {
-    /* background-color: rgb(255, 255, 247); */
-    /* background-color: #f9f9f1; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+.content {
+  padding: 50px 0 50px 0;
   width: 62rem;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
-  margin: 2rem auto 2rem auto;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.app{
+  background-color: rgba(255, 255, 255, 0.927);
+  transition: background 0.7s ease-in-out;
+}
+
+.dark-bg {
+  background-color: #1e2228f0;
 }
 
 @media (max-width: 400px){

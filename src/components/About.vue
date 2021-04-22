@@ -2,20 +2,22 @@
     <div class="mt-16 sm:grid grid-cols-2 justify-items-stretch">
         <div class="text-container">
             <div class="mb-12 mr-4">
-                <header class="font-bold text-left text-2xl mb-2">About me</header>
-                <p class="text-left text-gray-700 leading-relaxed p-2 text-lg">
+                <header class="font-bold text-left text-2xl mb-2" :class="(mode === 'dark') ? 'light-font-color' : 'blackish-font-color'">About me</header>
+                <p class="text-left leading-relaxed p-2 text-lg" :class="(mode === 'dark') ? 'light-font-color' : 'blackish-font-color'">
                     My name is Christophe Adriaensens. I started coding not so long ago. Now I'm a junior full stack developer with strong interest in everything web dev. Coffee, music and 26-inch bike enthousiast. Happy young dad of an energetic 5-year old girl.
                 </p>
             </div>
             
-            <header class="font-bold text-left text-xl mb-2">Skills</header>
-            <ul class="text-left text-gray-700 leading-relaxed p-2 text-lg">
+            <header class="font-bold text-left text-xl mb-2" :class="(mode === 'dark') ? 'light-font-color' : 'blackish-font-color'">Skills</header>
+            <ul class="text-left leading-relaxed p-2 text-lg" :class="(mode === 'dark') ? 'light-font-color' : 'blackish-font-color'">
                 <li>HTML5</li>
                 <li>CSS3 - Tailwind, Bootstrap</li>
                 <li>JavaScript - Vue, React</li>
                 <li>php - Laravel</li>
                 <br>
-                <span><a id="button" class="text-white py-1 px-2 rounded-lg shadow-lg font-bold" :href="pdfLink" download="cvChristopheAdriaensens">Download</a> my <span class="font-bold">cv</span> as a .pdf-file.</span>
+                <span>
+                    <a class="text-white py-1 px-2 rounded-lg shadow-lg font-bold" :href="pdfLink" download="cvChristopheAdriaensens" :class="(mode === 'dark') ? 'button-blue' : 'button-green'">Download</a> 
+                    my <span class="font-bold">cv</span> as a .pdf-file.</span>
             </ul>
 
             <div class="mt-4 p-2 flex gap-4">
@@ -35,15 +37,17 @@
 </template>
 
 <script>
+
 export default {
-  data () {
-      return {
-          recentImage: require("../assets/christopheNew.jpeg"),
-          oldImage: require("../assets/christopheJane.jpeg"),
-          hover: false,
-          pdfLink: require("../assets/cv_ChristopheAdriaensens.pdf")
-      }
-  },
+    props: ['mode'],
+    data () {
+        return {
+            recentImage: require("../assets/christopheNew.jpeg"),
+            oldImage: require("../assets/christopheJane.jpeg"),
+            hover: false,
+            pdfLink: require("../assets/cv_ChristopheAdriaensens.pdf")
+        }
+    },
     computed: {
         image() {
             if (this.hover) {
@@ -72,7 +76,29 @@ export default {
         transform: translate(5px,-5px);
     }
 
-    #button {
-        background-color: #a3ddcb;
+    .light-font-color {
+        color: rgba(255, 255, 255, 0.934);
+        transition: color 0.7s ease-in-out;
     }
+
+    .light-grey-color {
+        color: rgba(255, 255, 255, 0.803);
+        transition: color 0.7s ease-in-out;
+    }
+
+    .blackish-font-color {
+        color: rgba(4, 4, 4, 0.838);
+        transition: color 0.7s ease-in-out;
+     }
+
+     .button-blue {
+        background-color: #539BF5;
+        transition: background-color 0.7s ease-in-out;
+     }
+
+    .button-green {
+        background-color: #a3ddcb;
+        transition: color 0.7s ease-in-out;
+    }
+
 </style>

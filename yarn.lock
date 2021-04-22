@@ -873,6 +873,14 @@
   dependencies:
     "purgecss" "^3.1.3"
 
+"@growthbunker/vuedarkmode@^0.5.56":
+  "integrity" "sha512-V050cy/BKa8iYBJIHeigjHKcSw1Mn2v6UdSNA+cMrJArsvOp7HcCGqZ94ri0kcI/5zOacU2PbeGQhd1mvmzuhQ=="
+  "resolved" "https://registry.npmjs.org/@growthbunker/vuedarkmode/-/vuedarkmode-0.5.56.tgz"
+  "version" "0.5.56"
+  dependencies:
+    "v-click-outside" "2.1.4"
+    "v-hotkey" "0.8.0"
+
 "@hapi/address@2.x.x":
   "integrity" "sha512-QD1PhQk+s31P1ixsX0H0Suoupp3VMXzIVMSwobR3F3MSUO2YCV0B7xqLcUw/Bh8yuvd3LhpyqLQWTNcRmp6IdQ=="
   "resolved" "https://registry.npmjs.org/@hapi/address/-/address-2.1.4.tgz"
@@ -2911,6 +2919,11 @@
   dependencies:
     "browserslist" "^4.16.3"
     "semver" "7.0.0"
+
+"core-js@^2.6.5":
+  "integrity" "sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ=="
+  "resolved" "https://registry.npmjs.org/core-js/-/core-js-2.6.12.tgz"
+  "version" "2.6.12"
 
 "core-js@^3", "core-js@^3.6.5":
   "integrity" "sha512-pwCxEXnj27XG47mu7SXAwhLP3L5CrlvCB91ANUkIz40P27kUcvNfSdvyZJ9CLHiVoKSp+TTChMQMSKQEH/IQxA=="
@@ -8836,6 +8849,18 @@
   "resolved" "https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz"
   "version" "3.4.0"
 
+"v-click-outside@2.1.4":
+  "integrity" "sha512-NbQiwRjJjeKptI1qr1co2Ox44fUWEnj08chR1nw3DVrNCQHjb+sqlevzb1zCXMgb7orTFE0wpiecqMlbOZ15EQ=="
+  "resolved" "https://registry.npmjs.org/v-click-outside/-/v-click-outside-2.1.4.tgz"
+  "version" "2.1.4"
+
+"v-hotkey@0.8.0":
+  "integrity" "sha512-TWxiUbd5DPF/ClnGsa0VHw1jXX6xA8G8jNy/qFeULVz28cq8ZFz+SGNcniXj7WHazoqRUSzL20y/VDiZ+yzprw=="
+  "resolved" "https://registry.npmjs.org/v-hotkey/-/v-hotkey-0.8.0.tgz"
+  "version" "0.8.0"
+  dependencies:
+    "core-js" "^2.6.5"
+
 "v8-compile-cache@^2.0.3":
   "integrity" "sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA=="
   "resolved" "https://registry.npmjs.org/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz"
@@ -8931,6 +8956,11 @@
     "@vue/compiler-dom" "3.0.11"
     "@vue/runtime-dom" "3.0.11"
     "@vue/shared" "3.0.11"
+
+"vue@^2.x":
+  "integrity" "sha512-uhmLFETqPPNyuLLbsKz6ioJ4q7AZHzD8ZVFNATNyICSZouqP2Sz0rotWQC8UNBF6VGSCs5abnKJoStA6JbCbfg=="
+  "resolved" "https://registry.npmjs.org/vue/-/vue-2.6.12.tgz"
+  "version" "2.6.12"
 
 "watchpack-chokidar2@^2.0.1":
   "integrity" "sha512-nCFfBIPKr5Sh61s4LPpy1Wtfi0HE8isJ3d2Yb5/Ppw2P2B/3eVSEBjKfN0fmHJSK14+31KwMKmcrzs2GM4P0Ww=="
