@@ -1,21 +1,21 @@
 <template>
-    <div class="mt-24 sm:grid grid-cols-2 justify-items-stretch">
+    <div class="mt-16 sm:grid grid-cols-2 justify-items-stretch">
         <div class="text-container">
             <div class="mb-12 mr-4">
                 <header class="font-bold text-left text-2xl mb-2">About me</header>
-                <p class="text-left text-gray-700 leading-relaxed p-2">
+                <p class="text-left text-gray-700 leading-relaxed p-2 text-lg">
                     My name is Christophe Adriaensens. I started coding not so long ago. Now I'm a junior full stack developer with strong interest in everything web dev. Coffee, music and 26-inch bike enthousiast. Happy young dad of an energetic 5-year old girl.
                 </p>
             </div>
             
             <header class="font-bold text-left text-xl mb-2">Skills</header>
-            <ul class="text-left text-gray-700 leading-relaxed p-2">
+            <ul class="text-left text-gray-700 leading-relaxed p-2 text-lg">
                 <li>HTML5</li>
                 <li>CSS3 - Tailwind, Bootstrap</li>
                 <li>JavaScript - Vue, React</li>
                 <li>php - Laravel</li>
                 <br>
-                <span>Downlad my <span class="font-bold">cv</span> as a .pdf-file <a id="button" class="text-white py-1 px-2 rounded-lg shadow-lg font-bold" :href="pdfLink" download="cvChristopheAdriaensens">here</a></span>.
+                <span><a id="button" class="text-white py-1 px-2 rounded-lg shadow-lg font-bold" :href="pdfLink" download="cvChristopheAdriaensens">Download</a> my <span class="font-bold">cv</span> as a .pdf-file.</span>
             </ul>
 
             <div class="mt-4 p-2 flex gap-4">

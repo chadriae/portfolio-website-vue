@@ -1,29 +1,29 @@
 <template>
-    <div class="mt-12 text-left">
+    <div class="mt-16 text-left">
         <header class="font-bold text-left text-2xl mb-2">Projects</header>
         <div class="md:grid grid-cols-2 gap-6">
-            <div class="card p-4 leading-loose relative rounded-lg shadow w-auto">
-                <a class="flex justify-center" href="https://github.com/chadriae/king-size"><img class="h-80" @mouseover="chainedHover = true" @mouseleave="chainedHover = false" :src="chained"></a>
-                <header class=" uppercase font-semibold"><a href="https://github.com/chadriae/king-size">Chained</a></header>
-                <p class="text-gray-700 h-32">A website made for people who want to look for a local bicycle repairer. Repairers also get to make an account and share their specialties and locality.</p>
+            <div class="mb-4 card p-4 leading-loose relative rounded-lg shadow w-auto">
+                <a class="flex justify-center" href="https://github.com/chadriae/king-size"><img class="" @mouseover="chainedHover = true" @mouseleave="chainedHover = false" :src="chained"></a>
+                <header class="mt-6 uppercase font-semibold"><a href="https://github.com/chadriae/king-size">Chained</a></header>
+                <p class="text-gray-700 h-36 mb-4 sm:mb-0">A website made for people who want to look for a local bicycle repairer. Repairers also get to make an account and share their specialties and locality.</p>
                 <div class="absolute bottom-2 inset-x-4 flex flex-row-reverse gap-2">
                     <a href="https://tailwindcss.com/"><img class="h-6 backdrop-filter grayscale" src="../assets/tailwind.png"></a>
                     <a href="https://vuejs.org/"><img class="h-6" src="../assets/vue.png"></a>
                     <a href="https://laravel.com/"><img class="h-6" src="../assets/laravel.png"></a>
                 </div>
              </div>
-            <div class="card p-4 leading-loose relative rounded-lg shadow">
-                <a class="flex justify-center" href="https://github.com/chadriae/php-mvc-Ismi"><img class="h-80" @mouseover="beconnectHover = true" @mouseleave="beconnectHover = false" :src="beconnect"></a>
-                <header class="uppercase font-semibold"><a href="https://github.com/chadriae/php-mvc-Ismi">BeConnect</a></header>
+            <div class="mb-4 card p-4 leading-loose relative rounded-lg shadow">
+                <a class="flex justify-center" href="https://github.com/chadriae/php-mvc-Ismi"><img class="" @mouseover="beconnectHover = true" @mouseleave="beconnectHover = false" :src="beconnect"></a>
+                <header class="mt-6 uppercase font-semibold"><a href="https://github.com/chadriae/php-mvc-Ismi">BeConnect</a></header>
                 <p class="text-gray-700 h-32">A place where BeCode-alumni could meet, register, update their profiles and talk about their experiences.</p>
                 <div class="absolute bottom-2 inset-x-4 flex flex-row-reverse gap-2">
                     <a href="https://www.mysql.com/"><img class="h-6" src="../assets/mysql.png"></a>
                     <a href="https://www.php.net/"><img class="h-6" src="../assets/php.png"></a>
                 </div>
             </div>
-            <div class="card p-4 leading-loose relative rounded-lg shadow">
-                <a class="flex justify-center" href="https://github.com/chadriae/intro-react"><img class="h-80" @mouseover="todoHover = true" @mouseleave="todoHover = false" :src="todo"></a>
-                <header class="uppercase font-semibold"><a href="https://github.com/chadriae/intro-react">ToDo</a></header>
+            <div class="mb-4 card p-4 leading-loose relative rounded-lg shadow">
+                <a class="flex justify-center" href="https://github.com/chadriae/intro-react"><img class="" @mouseover="todoHover = true" @mouseleave="todoHover = false" :src="todo"></a>
+                <header class="mt-6 uppercase font-semibold"><a href="https://github.com/chadriae/intro-react">ToDo</a></header>
                 <p class="text-gray-700 h-32">Simple and fun todo-app made with React. Added time, date and inspirational quotes.</p>
                 <div class="absolute bottom-2 inset-x-4 flex flex-row-reverse gap-2">
                     <a href="https://sass-lang.com/"><img class="h-6" src="../assets/scss.png"></a>

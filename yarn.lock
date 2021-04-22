@@ -905,6 +905,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@headlessui/vue@^1.0.0":
+  "integrity" "sha512-TPIe/7j9/J5wpXk+VfxGj49alSgUPdCCg9alApps3aqEpdFSbtJfXbNpQsMJIAnimZENxAK/AneCcvI9dpLKbg=="
+  "resolved" "https://registry.npmjs.org/@headlessui/vue/-/vue-1.0.0.tgz"
+  "version" "1.0.0"
+
 "@intervolga/optimize-cssnano-plugin@^1.0.5":
   "integrity" "sha512-zN69TnSr0viRSU6cEDIcuPcP67QcpQ6uHACg58FiN9PDrU6SLyGW3MR4tiISbYxy1kDWAVPwD+XwQTWE5cigAA=="
   "resolved" "https://registry.npmjs.org/@intervolga/optimize-cssnano-plugin/-/optimize-cssnano-plugin-1.0.6.tgz"
