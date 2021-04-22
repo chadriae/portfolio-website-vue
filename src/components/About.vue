@@ -93,12 +93,12 @@ export default {
 
      .button-blue {
         background-color: #539BF5;
-        transition: background-color 0.7s ease-in-out;
+        transition: background 0.7s ease-in-out;
      }
 
     .button-green {
         background-color: #a3ddcb;
-        transition: color 0.7s ease-in-out;
+        transition: background 0.7s ease-in-out;
     }
 
 </style>
