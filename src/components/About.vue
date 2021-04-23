@@ -21,10 +21,10 @@
             </ul>
 
             <div class="mt-4 p-2 flex gap-4">
-                <a href="https://github.com/chadriae"><img src="../assets/github.png" class="h-12 social-media"></a>
-                <a href="https://www.linkedin.com/in/christophe-adriaensens/"><img src="../assets/linkedin.png" class="h-12 social-media"></a>
+                <a href="https://github.com/chadriae"><img src="../assets/github.png" class="h-12 social-media rounded-full"></a>
+                <a href="https://www.linkedin.com/in/christophe-adriaensens/"><img src="../assets/linkedin.png" class="h-12 social-media rounded-full"></a>
                 <a href="https://dev.to/chadriae"><img src="../assets/devto.png" class="h-12 social-media rounded-full"></a>
-                <a href="https://twitter.com/chadriae"><img src="../assets/twitter.png" class="h-12 social-media"></a>
+                <a href="https://twitter.com/chadriae"><img src="../assets/twitter.png" class="h-12 social-media rounded-full"></a>
             </div>
         </div>
         <div class="pic-container h-96 w-72 mt-8 mr-4 justify-self-end">
@@ -61,6 +61,11 @@ export default {
 </script>
 
 <style scoped>
+    .social-media {
+        background-color: rgba(255, 255, 255, 0.708);
+        opacity: 0.8;
+    }
+
     .social-media:hover {
         opacity: 0.5;
     }

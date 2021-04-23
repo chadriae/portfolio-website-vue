@@ -28,7 +28,7 @@ export default {
   name: 'App',
   data() {
     return {
-      mode: 'dark'
+      mode: 'light'
     }
   },
   components: {
@@ -68,13 +68,13 @@ export default {
   min-height: 100vh;
 }
 
-.app{
+.app {
   background-color: rgba(255, 255, 255, 0.927);
   transition: background 0.7s ease-in-out;
 }
 
 .dark-bg {
-  background-color: #1e2228f0;
+  background-color: #1E2228;
 }
 
 @media (max-width: 400px){
