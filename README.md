@@ -2,19 +2,19 @@
 
 ### The purpose :iphone:
 
-> "Hey! Do you have a portfolio-website for yourself as a developer"
+> "Hey! Do you have a portfolio-website for yourself as a developer?"
 
 Well, yes, I do now. Purpose is simple: highlight your skills by building a website about yourself.
 
 ### Highlighted features :crystal_ball:
 
-- `Dark mode`
+- `Dark mode` <br>
   You can switch between light and dark mode with the slider at the top.
-- `Download cv`
+- `Download cv` <br>
   You can download my cv as a .pdf by clicking the button.
-- `Animated pictures when hovered`
+- `Animated pictures when hovered` <br>
   A .gif will start showing when you hover over the image of a project.
-- `Hover effect`
+- `Hover effect`<br>
   The picture of myself has a cool Twitch-like hover effect.
 
 ### Technologies used :video_game:
@@ -27,4 +27,4 @@ Well, yes, I do now. Purpose is simple: highlight your skills by building a webs
 
 ### Live version :mortar_board:
 
-Check it out [here](https://chadriae.netlify.app/).
+> Check it out [here](https://chadriae.netlify.app/).
