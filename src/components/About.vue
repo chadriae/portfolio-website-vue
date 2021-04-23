@@ -21,10 +21,10 @@
             </ul>
 
             <div class="mt-4 p-2 flex gap-4">
-                <a href="https://github.com/chadriae"><img src="../assets/github.png" class="h-12 social-media rounded-full"></a>
-                <a href="https://www.linkedin.com/in/christophe-adriaensens/"><img src="../assets/linkedin.png" class="h-12 social-media rounded-full"></a>
-                <a href="https://dev.to/chadriae"><img src="../assets/devto.png" class="h-12 social-media rounded-full"></a>
-                <a href="https://twitter.com/chadriae"><img src="../assets/twitter.png" class="h-12 social-media rounded-full"></a>
+                <a href="https://github.com/chadriae"><img src="../assets/github.png" class="h-12 rounded-full social-media" :class="(mode === 'dark') ? 'social-media-inverted' : ''"></a>
+                <a href="https://www.linkedin.com/in/christophe-adriaensens/"><img src="../assets/linkedin.png" class="h-12 social-media rounded-full" :class="(mode === 'dark') ? 'social-media-inverted' : ''"></a>
+                <a href="https://dev.to/chadriae"><img src="../assets/devto.png" class="h-12 social-media rounded-full" :class="(mode === 'dark') ? 'social-media-inverted' : ''"></a>
+                <a href="https://twitter.com/chadriae"><img src="../assets/twitter.png" class="h-12 social-media rounded-full" :class="(mode === 'dark') ? 'social-media-inverted' : ''"></a>
             </div>
         </div>
         <div class="pic-container h-96 w-72 mt-8 mr-4 justify-self-end">
@@ -61,49 +61,49 @@ export default {
 </script>
 
 <style scoped>
-    .social-media {
-        background-color: rgba(255, 255, 255, 0.708);
-        opacity: 0.8;
-    }
+.social-media-inverted {
+    filter: invert(100%);
+    transition: 0.7s;
+}
 
-    .social-media:hover {
-        opacity: 0.5;
-    }
+.social-media:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
 
-    .pic {
-        margin:10px;
-        box-shadow:0 0 rgba(255, 0, 0, 0.625);
-        transition:0.5s;
-    }
+.pic {
+    margin: 10px;
+    box-shadow: 0 0 rgba(255, 0, 0, 0.625);
+    transition: 0.5s;
+}
 
-    .pic:hover {
-        box-shadow: -5px 5px rgba(255, 0, 0, 0.625);
-        transform: translate(5px,-5px);
-    }
+.pic:hover {
+    box-shadow: -5px 5px rgba(255, 0, 0, 0.625);
+    transform: translate(5px,-5px);
+}
 
-    .light-font-color {
-        color: rgba(255, 255, 255, 0.934);
-        transition: color 0.7s ease-in-out;
-    }
+.light-font-color {
+    color: rgba(255, 255, 255, 0.934);
+    transition: color 0.7s ease-in-out;
+}
 
-    .light-grey-color {
-        color: rgba(255, 255, 255, 0.803);
-        transition: color 0.7s ease-in-out;
-    }
+.light-grey-color {
+    color: rgba(255, 255, 255, 0.803);
+    transition: color 0.7s ease-in-out;
+}
 
-    .blackish-font-color {
-        color: rgba(4, 4, 4, 0.838);
-        transition: color 0.7s ease-in-out;
-     }
+.blackish-font-color {
+    color: rgba(4, 4, 4, 0.838);
+    transition: color 0.7s ease-in-out;
+}
 
-     .button-blue {
-        background-color: #539BF5;
-        transition: background 0.7s ease-in-out;
-     }
+.button-blue {
+    background-color: #539BF5;
+    transition: background 0.7s ease-in-out;
+}
 
-    .button-green {
-        background-color: #a3ddcb;
-        transition: background 0.7s ease-in-out;
-    }
-
+.button-green {
+    background-color: #a3ddcb;
+    transition: background 0.7s ease-in-out;
+}
 </style>
