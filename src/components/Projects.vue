@@ -78,7 +78,7 @@ export default {
 
 <style scoped>
 .project-bg-dark {
-    background-color: #1E2228;
+    background-color: #21272e;
     border: 1px solid #6a6969;
     transition: background 0.7s ease-in-out;
 }
@@ -95,7 +95,8 @@ export default {
 
 .background-white {
     background-color: white;
-    transition: background 0.7s ease-in-out;
+    border: 1px solid #f0f0f0;
+    transition: 0.7s ease-in-out;
 }
 
 </style>
