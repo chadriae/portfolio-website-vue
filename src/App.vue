@@ -1,9 +1,9 @@
 <template>
   <div class="app" :class="(mode === 'dark') ? 'dark-bg' : ''">
     <div class="content">
-      <div class="sm:relative">
+      <div class="flex justify-between sm:relative">
         <Hello :mode="mode" />
-        <div class="text-right sm:absolute top-0 right-0">
+        <div class="sm:absolute sm:top-0 sm:right-0">
           <Switch  @toggle="toggle" />
         </div>
       </div>
@@ -61,7 +61,7 @@ export default {
 
 .content {
   padding: 50px 0 50px 0;
-  width: 62rem;
+  max-width: 62rem;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   margin: auto;
@@ -79,7 +79,7 @@ export default {
 
 @media (max-width: 400px){
   #app{
-    width: auto;
+    /* width: auto; */
     margin: auto;
   }
 }
