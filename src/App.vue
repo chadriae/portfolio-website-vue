@@ -1,6 +1,6 @@
 <template>
   <div class="app" :class="(mode === 'dark') ? 'dark-bg' : ''">
-    <div class="mx-16 lg:m-auto content">
+    <div class="mx-4 lg:m-auto content">
       <div class="flex justify-between sm:relative">
         <Hello :mode="mode" />
         <div class="sm:absolute sm:top-0 sm:right-0">
