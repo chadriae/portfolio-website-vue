@@ -1,9 +1,9 @@
 <template>
   <div class="app" :class="(mode === 'dark') ? 'dark-bg' : ''">
     <div class="content">
-      <div class="relative">
+      <div class="sm:relative">
         <Hello :mode="mode" />
-        <div class="absolute top-0 right-0">
+        <div class="text-right sm:absolute top-0 right-0">
           <Switch  @toggle="toggle" />
         </div>
       </div>
