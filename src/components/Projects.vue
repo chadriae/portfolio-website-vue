@@ -76,27 +76,29 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../styles/_variables.scss";
+
 .project-bg-dark {
-    background-color: #21272e;
-    border: 1px solid #6a6969;
-    transition: background 0.7s ease-in-out;
+    background-color: $dark-bg-color;
+    border: 1px solid $dark-border-color;
+    transition: $transition;
 }
 
 .light-font-color {
-    color: rgba(255, 255, 255, 0.899);
-    transition: color 0.7s ease-in-out;
+    color: $white-color;
+    transition: $font-color-transition;
 }
 
 .blackish-font-color {
-    color: rgba(4, 4, 4, 0.838);
-    transition: color 0.7s ease-in-out;
+    color: $dark-font-color;
+    transition: $font-color-transition;
 }
 
 .background-white {
-    background-color: white;
-    border: 1px solid #f0f0f0;
-    transition: 0.7s ease-in-out;
+    background-color: $white-color;
+    border: 1px solid $light-border-color;
+    transition: $transition;
 }
 
 </style>

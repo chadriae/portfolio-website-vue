@@ -12,24 +12,26 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../styles/_variables.scss";
+
 .greenish-font-color{
-    color: #557174;
-    transition: color 0.7s ease-in-out;
+    color: $greenish-font-color;
+    transition: $font-color-transition;
 }
 
 .light-greenish-font-color {
-    color: #9dcbd0;
-    transition: color 0.7s ease-in-out;
+    color: $light-greenish-font-color;
+    transition: $font-color-transition;
 }
 
 .grey-font-color {
-    color: rgba(255, 255, 255, 0.934);
-    transition: color 0.7s ease-in-out;
+    color: $white-color;
+    transition: $font-color-transition;
 }
 
 .blackish-font-color {
-    color: rgba(4, 4, 4, 0.838);
-    transition: color 0.7s ease-in-out;
+    color: $dark-font-color;
+    transition: $font-color-transition;
 }
 </style>

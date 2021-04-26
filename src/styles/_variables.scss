@@ -1,6 +1,20 @@
+$font-family: Avenir, Helvetica, Arial, sans-serif;
+
 $pic-hover-color: rgba(255, 0, 0, 0.625);
 
-$light-font-color: rgba(255, 255, 255, 0.934);
+$white-color: rgba(255, 255, 255, 0.934);
 $dark-font-color: rgba(4, 4, 4, 0.838);
+$greenish-font-color: #557174;
+$light-greenish-font-color: #9dcbd0;
+
+$dark-bg-color: #1E2228;
+
+$dark-border-color: #6a6969;
+$light-border-color: #f0f0f0;
 
 $font-color-transition: color 0.7s ease-in-out;
+$transition: 0.7s ease-in-out;
+
+$opacity-transition: opacity 0.5s ease-out;
+
+$full-filter-invert: invert(100%);

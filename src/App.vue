@@ -52,7 +52,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+@import "./styles/_variables.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -62,19 +64,20 @@ export default {
 .content {
   padding: 50px 0 50px 0;
   max-width: 62rem;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: $font-family;
   text-align: center;
-  margin: auto;
+  margin: auto; 
   min-height: 100vh;
 }
 
 .app {
-  background-color: rgba(255, 255, 255, 0.927);
-  transition: background 0.7s ease-in-out;
+  background-color: $white-color;
+  transition: $transition;
 }
 
 .dark-bg {
-  background-color: #1E2228;
+  background-color: $dark-bg-color;
+  transition: $transition
 }
 
 @media (max-width: 400px){

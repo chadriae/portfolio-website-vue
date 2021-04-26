@@ -23,19 +23,21 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../styles/_variables.scss";
+
 .light-font-color {
-    color: rgba(255, 255, 255, 0.899);
-    transition: color 0.7s ease-in-out;
+    color: $white-color;
+    transition: $font-color-transition;
 }
 
 .blackish-font-color {
-    color: rgba(4, 4, 4, 0.838);
-    transition: color 0.7s ease-in-out;
+    color: $dark-font-color;
+    transition: $font-color-transition;
 }
 
 .icons-inverted {
-    filter: invert(100%);
-    transition: 0.7s;
+    filter: $full-filter-invert;
+    transition: $transition;
 }
 </style>

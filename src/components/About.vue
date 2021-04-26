@@ -64,8 +64,8 @@ export default {
 @import "../styles/_variables.scss";
 
 .social-media-inverted {
-    filter: invert(100%);
-    transition: 0.7s;
+    filter: $full-filter-invert;
+    transition: $transition;
 }
 
 .social-media:hover {
@@ -85,7 +85,7 @@ export default {
 }
 
 .light-font-color {
-    color: $light-font-color;
+    color: $white-color;
     transition: $font-color-transition;
 }
 
@@ -96,11 +96,11 @@ export default {
 
 .button-blue {
     background-color: #539BF5;
-    transition: background 0.7s ease-in-out;
+    transition: $transition;
 }
 
 .button-green {
     background-color: #a3ddcb;
-    transition: background 0.7s ease-in-out;
+    transition: $transition;
 }
 </style>
