@@ -4,7 +4,7 @@
       <div class="flex justify-between sm:relative">
         <Hello :mode="mode" />
         <div class="sm:absolute sm:top-0 sm:right-0">
-          <Switch  @toggle="toggle" />
+          <Switch @toggle="toggle" :mode="mode" />
         </div>
       </div>
       <About :mode="mode" />

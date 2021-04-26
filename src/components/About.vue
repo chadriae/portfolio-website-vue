@@ -60,7 +60,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../styles/_variables.scss";
+
 .social-media-inverted {
     filter: invert(100%);
     transition: 0.7s;
@@ -73,28 +75,23 @@ export default {
 
 .pic {
     margin: 10px;
-    box-shadow: 0 0 rgba(255, 0, 0, 0.625);
+    box-shadow: 0 0 $pic-hover-color;
     transition: 0.5s;
 }
 
 .pic:hover {
-    box-shadow: -5px 5px rgba(255, 0, 0, 0.625);
+    box-shadow: -5px 5px $pic-hover-color;
     transform: translate(5px,-5px);
 }
 
 .light-font-color {
-    color: rgba(255, 255, 255, 0.934);
-    transition: color 0.7s ease-in-out;
-}
-
-.light-grey-color {
-    color: rgba(255, 255, 255, 0.803);
-    transition: color 0.7s ease-in-out;
+    color: $light-font-color;
+    transition: $font-color-transition;
 }
 
 .blackish-font-color {
-    color: rgba(4, 4, 4, 0.838);
-    transition: color 0.7s ease-in-out;
+    color: $dark-font-color;
+    transition: $font-color-transition;
 }
 
 .button-blue {
