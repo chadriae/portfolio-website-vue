@@ -1,6 +1,6 @@
 <template>
     <div class="mt-16 text-left ">
-        <header :class="(mode === 'dark') ? 'light-font-color' : 'blackish-font-color'" class="font-bold text-left text-2xl mb-2 ">Projects</header>
+        <header :class="(mode === 'dark') ? 'light-font-color' : 'blackish-font-color'" class="title font-bold text-left text-2xl mb-2 ">Projects</header>
         <div class="md:mx-auto md:grid grid-cols-2 gap-6">
             <div class="mb-4 card p-8 leading-loose relative rounded-lg shadow w-auto" :class="(mode === 'dark') ? 'project-bg-dark' : 'background-white'">
                 <a class="flex justify-center" href="https://github.com/chadriae/king-size"><img class="" @mouseover="chainedHover = true" @mouseleave="chainedHover = false" :src="chained"></a>
@@ -78,6 +78,10 @@ export default {
 
 <style scoped lang="scss">
 @import "../styles/_variables.scss";
+
+.title {
+    font-family: $roboto-font;
+}
 
 .project-bg-dark {
     background-color: $dark-bg-color;

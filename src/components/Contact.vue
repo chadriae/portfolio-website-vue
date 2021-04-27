@@ -1,7 +1,7 @@
 <template>
     <div class="text-left">
         <div class="mt-12 text-left">
-            <header :class="(mode === 'dark') ? 'light-font-color' : 'blackish-font-color'" class="font-bold text-left text-2xl mb-4">Contact me</header>
+            <header :class="(mode === 'dark') ? 'light-font-color' : 'blackish-font-color'" class="title font-bold text-left text-2xl mb-4">Contact me</header>
             <div class="text-gray-700 p-2">
                 <div class="">
                     <a :class="(mode === 'dark') ? 'light-font-color' : 'blackish-font-color'" class="inline-block mb-4" href="mailto:christophe.adriaensens@gmail.com">
@@ -25,6 +25,10 @@ export default {
 
 <style scoped lang="scss">
 @import "../styles/_variables.scss";
+
+.title {
+    font-family: $roboto-font;
+}
 
 .light-font-color {
     color: $white-color;

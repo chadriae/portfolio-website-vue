@@ -1,8 +1,8 @@
 <template>
     <div class="text-left">
-        <header class="uppercase font-bold text-3xl mb-2" :class="(mode === 'dark') ? 'grey-font-color' : 'greenish-font-color'">Christophe Adriaensens</header>
-        <p class="font-bold text-xl mb-2" :class="(mode === 'dark') ? 'light-greenish-font-color' : 'blackish-font-color'">I'm a junior full-stack developer.</p>
-        <p class="text-gray-700 ml-2" :class="(mode === 'dark') ? 'light-greenish-font-color' : 'blackish-font-color'">Based in Ghent.</p>
+        <header class="roboto uppercase font-bold text-4xl mb-2" :class="(mode === 'dark') ? 'grey-font-color' : 'greenish-font-color'">Christophe Adriaensens</header>
+        <p class="roboto font-bold text-xl mb-2" :class="(mode === 'dark') ? 'light-greenish-font-color' : 'blackish-font-color'">Junior full-stack developer</p>
+        <p class="text-gray-700 ml-2" :class="(mode === 'dark') ? 'light-greenish-font-color' : 'blackish-font-color'">Based in Ghent</p>
     </div>
 </template>
 
@@ -14,6 +14,10 @@ export default {
 
 <style scoped lang="scss">
 @import "../styles/_variables.scss";
+
+.roboto {
+    font-family: $roboto-font;
+}
 
 .greenish-font-color{
     color: $greenish-font-color;
