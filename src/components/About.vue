@@ -21,7 +21,7 @@
                 </div>
             </ul>
 
-            <div class="mt-4 mb-12 p-2 flex gap-4">
+            <div class="mt-4 mb-6    p-2 flex gap-4">
                 <a href="https://github.com/chadriae"><img src="../assets/github.png" class="h-12 rounded-full social-media" :class="(mode === 'dark') ? 'social-media-inverted' : ''"></a>
                 <a href="https://www.linkedin.com/in/christophe-adriaensens/"><img src="../assets/linkedin.png" class="h-12 social-media rounded-full" :class="(mode === 'dark') ? 'social-media-inverted' : ''"></a>
                 <a href="https://dev.to/chadriae"><img src="../assets/devto.png" class="h-12 social-media rounded-full" :class="(mode === 'dark') ? 'social-media-inverted' : ''"></a>
