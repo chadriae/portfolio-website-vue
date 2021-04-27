@@ -43,7 +43,7 @@ export default {
     props: ['mode'],
     data () {
         return {
-            recentImage: require("../assets/christopheNew.jpeg"),
+            recentImage: require("../assets/christopheNew3.jpeg"),
             oldImage: require("../assets/christopheJane.jpeg"),
             hover: false,
             pdfLink: require("../assets/cv_ChristopheAdriaensens.pdf")
@@ -74,21 +74,21 @@ export default {
     font-weight: bold;
     letter-spacing: 1px;
     box-shadow: 0 0 black;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 #download-button:hover {
     box-shadow: -5px 5px black;
-    transform: translate(5px,-5px);
+    transform: translate(10px, 0px);
 }
 
 .button-blue {
-    background-color: #539BF5;
+    background-color: #37d0fe;
     transition: $transition;
 }
 
 .button-green {
-    background-color: #37FEE7;
+    background-color: #37d0fe;
     transition: $transition;
 }
 
@@ -110,6 +110,8 @@ export default {
     margin: 10px;
     box-shadow: 0 0 $pic-hover-color;
     transition: 0.5s;
+    border: 2px solid black;
+    border-radius: 7px;
 }
 
 .pic:hover {
