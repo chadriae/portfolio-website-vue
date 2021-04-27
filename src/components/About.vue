@@ -16,7 +16,12 @@
                 <li>php - Laravel</li>
                 <br>
                 <div class="my-8">
-                    <a id="download-button" class="mr-1" :href="pdfLink" download="cvChristopheAdriaensens" :class="(mode === 'dark') ? 'button-blue' : 'button-green'">Download</a> 
+                    <a 
+                        id="download-button" 
+                        class="mr-1" 
+                        :href="pdfLink" download="cvChristopheAdriaensens" 
+                    >
+                        Download</a> 
                     my <span class="font-bold">cv</span> as a .pdf-file.
                 </div>
             </ul>
@@ -29,7 +34,12 @@
             </div>
         </div>
         <div class="pic-container h-96 w-72 mt-8 mr-4 justify-self-end">
-            <div class="justify-self-end"><img class="pic h-96 w-auto" @mouseover="hover = true" @mouseleave="hover = false" :src="image"></div>
+            <div class="justify-self-end">
+                <img 
+                    class="pic h-96 w-auto" 
+                    @mouseover="hover = true" @mouseleave="hover = false" :src="image"
+                >
+            </div>
         </div>
     </div>
     <div class="text-left">
@@ -67,6 +77,7 @@ export default {
 #download-button {
     color: black;
     font-family: $roboto-font;
+    background-color: $button-color;
     border: 3px solid black;
     border-bottom: 6px solid black;
     padding: 5px 15px 5px 15px;
@@ -80,16 +91,6 @@ export default {
 #download-button:hover {
     box-shadow: -5px 5px black;
     transform: translate(10px, 0px);
-}
-
-.button-blue {
-    background-color: #37d0fe;
-    transition: $transition;
-}
-
-.button-green {
-    background-color: #37d0fe;
-    transition: $transition;
 }
 
 .title {

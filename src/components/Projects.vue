@@ -85,7 +85,8 @@ export default {
 
 .project-bg-dark {
     background-color: $dark-bg-color;
-    border: 1px solid $dark-border-color;
+    border: 2px solid $dark-border-color;
+    border-radius: 7px;
     transition: $transition;
 }
 
