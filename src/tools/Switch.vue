@@ -16,7 +16,7 @@
       @click="$emit('toggle')"
     >
       <span
-        :class="enabled ? 'transition duration-700 translate-x-1 bg-yellow-500' : 'transition duration-700 translate-x-6 bg-yellow-200'"
+        :class="enabled ? 'transition duration-700 translate-x-1 button-color border border-black' : 'transition duration-700 translate-x-6 button-color border border-black'"
         class="focus:outline-none inline-block w-4 h-4 transform rounded-full"
       />
     </Switch>
@@ -57,6 +57,11 @@
 
 <style scoped lang="scss">
 @import "../styles/_variables.scss";
+
+  .button-color {
+    background-color: $button-color;
+  }
+
   .background-dark {
     background-color: $dark-bg-color;
     transition: $transition;
